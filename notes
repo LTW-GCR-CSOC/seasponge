@@ -1,0 +1,42 @@
+Install on ubunutu 16
+----------
+sudo apt-get update && sudo apt-get -y upgrade
+wget https://github.com/mozilla/seasponge/archive/master.zip
+sudo apt-get install unzip
+unzip master.zip
+cd seasponge-master
+
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g npm
+sudo npm install -g bower
+sudo npm install -g grunt-cli
+sudo npm install -g yo
+sudo npm install -g generator-angular
+sudo apt-get install ruby-dev
+sudo apt-get install libz-dev
+apt-get install build-essential dh-autoreconf
+sudo gem install sass
+sudo gem install compass
+sudo npm install --allow-root
+sudo bower install --allow-root
+
+sudo grunt serve
+sudo grunt build
+----------
+
+File to update to allow public access
+--------
+/home/ubuntu/seasponge-master
+vi Gruntfile.coffee
+        port: 80
+        hostname: "0.0.0.0"
+
+Error that was solved by "apt-get install build-essential dh-autoreconf" 
+--------------------------
+ERROR:  Error installing sass:
+        ERROR: Failed to build gem native extension.
+    current directory: /var/lib/gems/2.3.0/gems/ffi-1.9.23/ext/ffi_c
+/usr/bin/ruby2.3 -r ./siteconf20180315-25122-b7r55x.rb extconf.rb
+checking for ffi.h... *** extconf.rb failed ***
+--------------------------
