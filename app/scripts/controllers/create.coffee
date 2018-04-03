@@ -13,7 +13,7 @@ angular.module('seaspongeApp')
         console.log('model', model);
 
         $scope.title = "Example 1"
-        $scope.authors = "Glavin Wiechert"
+        $scope.authors = "<Business Name>"
         $scope.version = "0.0.0"
 
         # Load Configuration from JSON string
