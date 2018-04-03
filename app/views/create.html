@@ -5,19 +5,32 @@
       
       <div class="masthead clearfix">
         <div class="inner">
-          <h3 class="masthead-brand">SeaSponge</h3>
+
+          <h2 class="masthead-brand" align="left"> <img src="https://csoc.cugcr.ca/assets/img/gcr-logo-vector.png" width="80">  CSOC Threat Modeler</h2>
+
           <nav>
             <ul class="nav masthead-nav">
-              <li><a href="#/about">About</a></li>
-              <li><a href="https://github.com/mozilla/seasponge/wiki">Documentation</a></li>
-              <li><a href="https://www.github.com/mozilla/seasponge">Github</a></li>
+<!--              <li><a href="cugcr.com">About</a></li> -->
+<!--              <li><a href="https://github.com/mozilla/seasponge/wiki">Documentation</a></li>
+              <li><a href="https://www.github.com/mozilla/seasponge">Github</a></li> -->
             </ul>
           </nav>
         </div>
       </div>
         
       <div class="inner cover">
-        <p class="lead">Create a Model</p>
+<div class="form-group" align="left">
+
+<!-- <img src="https://raw.githubusercontent.com/LTW-GCR-CSOC/csoc-installation-scripts/master/images/GCR-Black.png"> --> 
+
+<!-- <img src="https://csoc.cugcr.ca/assets/img/gcr-logo-vector.png" width="100"> -->
+
+Threat modeling plays an important part in securing your business. Expecialy when it comes to growing fast. Use this tool to model threats to your organizations assets.
+
+</div>
+
+
+        <p class="lead">Create a Threat Model</p>
         <form role="form" class="create-form">
 
           <div class="form-group">
@@ -27,7 +40,7 @@
           </div>
 
           <div class="form-group">
-            <label for="authors">Authors</label>
+            <label for="authors">Business Name</label>
             <input type="text" class="form-control" id="authors" 
             placeholder="Authors" ng-model="authors">
           </div>
@@ -39,11 +52,11 @@
           </div>
 
           <div class="form-group">
-            <label for="config">Configuration File</label>
+            <label for="config">Open File</label>
             <input type="file" class="load-form" id="config-file" onchange="angular.element(this).scope().loadFile(this)">
           </div>
 
-          <button type="submit" class="btn btn-default" ng-click="createModel()">Start Modeling!</button>
+          <button type="submit" class="btn btn-default" ng-click="createModel()">Create New Model</button>
 
         </form>
       </div>
