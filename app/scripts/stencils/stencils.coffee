@@ -24,6 +24,11 @@ angular.module('seaspongeApp')
     'CacheStencil'
     'DataStoreStencil'
     'DatabaseStencil'
+    'HacktivistsStencil'
+    'InsidersStencil'
+    'NationStateStencil'
+    'MedicalDeviceStencil'
+    'MalwareTIMStencil'
     , ->
         return arguments;
 ])
