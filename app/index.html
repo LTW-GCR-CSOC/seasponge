@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SeaSponge</title>
+  <title>Threat Modeler</title>
   <meta name="description" content="Accessible and client-side threat modeling tool">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -29,7 +29,9 @@
   <div ng-view="" class="height"></div>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+
   <script>
+/*
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
       i[r] = i[r] || function() {
@@ -44,7 +46,9 @@
 
     ga('create', 'UA-XXXXX-X');
     ga('send', 'pageview');
+*.
   </script>
+
 
   <!-- build:js(.) scripts/oldieshim.js -->
   <!--[if lt IE 9]>
@@ -106,6 +110,12 @@
   <script src="scripts/stencils/external/human-user.js"></script>
   <script src="scripts/stencils/external/server.js"></script>
   <script src="scripts/stencils/external/service.js"></script>
+  <script src="scripts/stencils/external/insiders.js"></script>
+  <script src="scripts/stencils/external/hacktivists.js"></script>
+  <script src="scripts/stencils/external/nationstate.js"></script>
+  <script src="scripts/stencils/external/malware.js"></script>
+
+
     <!-- Process -->
   <script src="scripts/stencils/process/base-process.js"></script>
   <script src="scripts/stencils/process/browser.js"></script>
@@ -121,7 +131,8 @@
   <script src="scripts/stencils/store/cache.js"></script>
   <script src="scripts/stencils/store/data-store.js"></script>
   <script src="scripts/stencils/store/database.js"></script>
-  <!-- End Stencils -->
+  <script src="scripts/stencils/store/medicaldevice.js"></script>
+ <!-- End Stencils -->
 
   <script src="scripts/controllers/create.js"></script>
   <script src="scripts/controllers/load.js"></script>
@@ -133,3 +144,4 @@
 </body>
 
 </html>
+
